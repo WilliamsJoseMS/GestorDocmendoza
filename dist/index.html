@@ -4,42 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casticel Manager</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              corporate: {
-                50: '#f0f9ff',
-                100: '#e0f2fe',
-                500: '#0ea5e9',
-                600: '#0284c7',
-                700: '#0369a1',
-                800: '#075985',
-                900: '#0c4a6e',
-              },
-              dark: {
-                bg: '#0B1120',
-                surface: '#151e32',
-                border: '#2a3855',
-                hover: '#1e293b'
-              }
-            },
-            animation: {
-              'fade-in': 'fadeIn 0.2s ease-out',
-            },
-            keyframes: {
-              fadeIn: {
-                '0%': { opacity: '0' },
-                '100%': { opacity: '1' },
-              }
-            }
-          }
-        }
-      }
-    </script>
     <style>
       @media print {
         @page { 
@@ -57,7 +21,7 @@
         thead { display: table-header-group; }
         tfoot { display: table-footer-group; }
         tr { page-break-inside: avoid; }
-        .break-inside-avoid { page-break-inside: avoid; break-inside: avoid; }
+        .break-inside-avoid { page-break-inside: avoid; -moz-column-break-inside: avoid; break-inside: avoid; }
         
         .no-print { display: none !important; }
         ::-webkit-scrollbar { display: none; }
@@ -67,6 +31,7 @@
       ::-webkit-scrollbar-thumb { background: #2a3855; border-radius: 5px; }
       ::-webkit-scrollbar-thumb:hover { background: #3b4d6e; }
     </style>
+
   <script type="importmap">
 {
   "imports": {
@@ -80,10 +45,10 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <script type="module" crossorigin src="/assets/index-DtLRJeCH.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-OVhnX1OS.css">
 </head>
   <body class="bg-dark-bg text-slate-200 antialiased">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
